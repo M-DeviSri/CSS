@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSS Selectors</title>
+<style>
+  /* Universal Selector */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  /* Type Selector */
+  p {
+    color: blue;
+  }
+
+  /* Class Selector */
+  .special {
+    font-weight: bold;
+  }
+
+  /* ID Selector */
+  #unique {
+    font-style: italic;
+  }
+
+  /* Descendant Selector */
+  div p {
+    text-decoration: underline;
+  }
+
+  /* Child Selector */
+  ul > li {
+    list-style: none;
+  }
+
+  /* Adjacent Sibling Selector */
+  h2 + p {
+    font-size: 1.2em;
+  }
+
+  /* Attribute Selector */
+  input[type="text"] {
+    border: 1px solid gray;
+  }
+
+  /* Pseudo-class Selector */
+  a:hover {
+    color: red;
+  }
+
+  /* Pseudo-element Selector */
+  p::first-line {
+    font-size: 1.2em;
+    text-transform: uppercase;
+  }
+</style>
+</head>
+<body>
+<center>
+<p>This is a paragraph.</p>
+<p class="special">This is a special paragraph.</p>
+<div>
+  <p>This is a paragraph inside a div.</p>
+</div>
+<h2>Title</h2>
+<p>This paragraph comes after the title.</p>
+<ul>
+  <li>Item 1</li>
+  <li>Item 2</li>
+</ul>
+<input type="text" placeholder="Enter your text">
+<a href="#">Hover over me</a>
+</center>
+</body>
+</html>

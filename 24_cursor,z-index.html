@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            CURSOR, Z-INDEX
+        </title>
+        <style>
+            div
+            {
+                width: 200px;
+                height: 100px;
+                padding: 50px;
+                border: solid 3px blue;
+                position: absolute;
+                color: black;
+                font-size: 22px;
+                font-weight: lighter;
+                text-align: center;
+            }
+            div:nth-child(1)
+            {
+                background-color: aqua;
+                z-index: 1;
+            }
+            div:nth-child(2)
+            {
+                background-color: aquamarine;
+                top: 150px;
+                left: 200px;
+                z-index: 2;
+            }
+            div:nth-child(3)
+            {
+                background-color: cadetblue;
+                top: 300px;
+                left: 400px;
+                z-index: 3;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            This is DIV-1
+        </div>
+        <div>
+            This is DIV-2
+        </div>
+        <div>
+            This is DIV-3
+        </div>
+    </body>
+</html>

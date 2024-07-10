@@ -1,0 +1,90 @@
+<!--
+    before flex - if we want to create a responsive web design we use flSkip the typing and talk properly with people in real time with huddles
+    oat and position
+    
+    flex:
+    1. You must have a container division.
+    2. In that container div we must have child elements.
+    3. Main axis - row(default x-axis). 
+    4. Cross axis - column(default y-axis).
+
+    flex-direction: row (default) | column
+    justify-content: align in main axis -- flex-start|flex-end | center | space-between | space-around | space-evenly
+    align-items: align in cross axis -- flex-start |  flex-end | center
+    flex-wrap : used to align wrap items in the inside of container.
+    align-content: only works if you wrap the items in container.
+    align-content: flex-start|flex-end | center | space-between | space-around | space-evenly
+    -------------- used to align the wraped items on cross axis.
+
+    there are few properties which works directly on flex items
+    flex-grow: used to increase the size of independent flex item.(1,2,3,...)
+    it takes unit less value.
+    0 - the item will not grow on responsive.
+
+    flex-shrink: Used to shrink the independent flex item.
+    it also takes unit less value.
+    flex-shrink: 0 - it will not shrink on responsive. 
+
+    flex-basis: Used to override  the width of individual items.
+
+    Align-self: used to align the flex item on cross axis.
+    values - flex-start | flex-end | center 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ALIGN SELF</title>
+        <style>
+            *
+            {
+                margin: 0px;
+                padding: 0px;
+            }
+            :root
+            {
+                --dark-clr:#000000;
+                --light-clr:#ffffff;
+                --main-clr:#f62291;
+                --second-clr:#992291;
+            }
+            .flex-container
+            {
+                width: 80%;
+                height: 90vh;
+                border: solid 10px var(--dark-clr);
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: flex-start;
+                
+                align-content: flex-start; 
+            }
+            .item
+            {
+                color: var(--dark-clr);
+                background-color: var(--main-clr);
+                border: solid 5px var(--second-clr);
+                width: 150px;
+                height: 150px;
+                padding: 30px;
+                font-size: 30px;
+                font-family: cursive;
+                text-align: center;
+            }
+            .item1
+            {
+                align-self: flex-end;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="flex-container">
+            <div class="item item1">This is child div1</div>
+            <div class="item item2">This is child div2</div>
+            <div class="item item3">This is child div3</div>
+        </div>
+    </body>
+</html>

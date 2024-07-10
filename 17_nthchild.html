@@ -1,0 +1,41 @@
+<!--
+    Advance Selectors :
+    > -   Direct child/decendent selector
+    space - all decendent selector
+    + - adjacent selector
+    ~ - all adjacent element selector
+    attribute selector
+
+-->
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width , initial-scale=1.0">
+        <title>ADVANCE SELECTORS</title>
+        <style>
+            div :first-child
+            {
+                color: cadetblue; 
+            }
+            div :nth-child(4)
+            {
+                color: crimson;
+            }
+            div :last-child
+            {
+                color: rgb(184, 73, 95);
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <h1>Hi this is h1 tag</h1>
+            <h1>Hi this is h1 tag</h1>
+            <h1>Hi this is h1 tag</h1> <!-- Direct Decendent -->
+            <h1>Hi this is h1 tag</h1>
+            <h1>Hi this is h1 tag</h1>
+            <h1>Hi this is h1 tag</h1>
+        </div>
+    </body>
+</html>

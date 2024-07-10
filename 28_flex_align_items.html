@@ -1,0 +1,67 @@
+<!--
+    before flex - if we want to create a responsive web design we use float and position
+    
+    flex:
+    1. You must have a container division.
+    2. In that container div we must have child elements.
+    3. Main axis - row(default x-axis). 
+    4. Cross axis - column(default y-axis).
+
+    flex-direction: row (default) | column
+    justify-content: align in main axis -- flex-start|flex-end | center | space-between | space-around | space-evenly
+    align-items: align in cross axis -- flex-start |  flex-end | center
+
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>FLEX ALIGN ITEMS</title>
+        <style>
+            *
+            {
+                margin: 0px;
+                padding: 0px;
+            }
+            :root
+            {
+                --dark-clr:#000000;
+                --light-clr:#ffffff;
+                --main-clr:#f62291;
+                --second-clr:#992291;
+            }
+            .flex-container
+            {
+                width: 80%;
+                height: 90vh;
+                border: solid 5px var(--dark-clr);
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                align-items: center;
+            }
+            .item
+            {
+                color: var(--dark-clr);
+                background-color: var(--main-clr);
+                border: solid 5px var(--second-clr);
+                width: 150px;
+                height: 150px;
+                padding: 30px;
+                font-size: 30px;
+                font-family: cursive;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="flex-container">
+            <div class="item item1">This is child div1</div>
+            <div class="item item2">This is child div2</div>
+            <div class="item item3">This is child div3</div>
+        </div>
+    </body>
+</html>

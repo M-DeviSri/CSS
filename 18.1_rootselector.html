@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            ROOT SELECTOR CSS
+        </title>
+        <style>
+            :root
+            {
+                --dark-clr:#000000;
+                --light-clr:#ffffff;
+                --main-clr:#f62291;
+                --second-clr:#992291;
+            }
+            div
+            {
+                color: var(--dark-clr);
+                background-color: var(--main-clr);
+                border: solid 5px var(--second-clr);
+                width: 200px;
+                height: 200px;
+                padding: 30px;
+                font-size: 30px;
+                font-family: cursive;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            This is a division
+        </div>
+    </body>
+</html>

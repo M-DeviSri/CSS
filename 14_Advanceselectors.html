@@ -1,0 +1,37 @@
+<!--
+    Advance Selectors :
+    > -   Direct child/decendent selector
+    space - all decendent selector
+    + - adjacent selector
+    ~ - all adjacent element selector
+    attribute selector
+
+-->
+
+<html>
+    <head>
+        <title>ADVANCE SELECTORS</title>
+        <style>
+            div > h1
+            {
+                color: cadetblue; 
+            }
+            div + h1
+            {
+                color: violet;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <h1>Hi this is h1 tag</h1>
+            <h1>Hi this is h1 tag</h1>
+            <h1>Hi this is h1 tag</h1> <!-- Direct Decendent -->
+            <a href="#">
+                <h1>Hi this is h1 tag</h1>
+            </a>
+        </div>
+        <h1>Hi this is h1 tag</h1>
+        <h1>Hi this is h1 tag</h1>
+    </body>
+</html>

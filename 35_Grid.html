@@ -1,0 +1,117 @@
+<!-- 
+
+    Grid - It consists of rows and columns
+    - But the dimentions are very different. (refer the image)
+    
+    - To work on grid we must have a container div
+    - Inside the container we must have child items inside it. 
+
+ -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root
+        {
+            --dark-clr:#0e4f7a;
+            --light-clr:#d6e2e3;
+            --main-clr:#c7506a;
+            --secondary-clr:#8fdcd5;
+        }
+        body
+        {
+            margin:0px;
+            padding: 0px;
+            color:var(--dark-clr);
+            background-color: var(--light-clr);
+            height: 100vh;
+        }
+        .container
+        {
+            width: 80%;
+            height: auto;
+            margin: 0 auto;
+            border: 10px solid var(--dark-clr);
+        }
+
+        .item
+        {
+            width: auto;
+            height: auto;
+            background-color: var(--secondary-clr);
+            border-radius: 10px;
+            color: black;
+            border: solid 10px var(--main-clr);
+        }
+
+    /************** Starting Grid Styles ***********
+    
+        display:grid - used to display the grid items in the form of rows and columns. 
+        ** Each grid has starting and ending coordinates. 
+        - grid-template-rows - used to specify how many templates are there. 
+        - keep item's height=auto, width=auto. 
+        - To position an item
+            * gird-row-start:
+            * grid-row-end:
+            * grid-column-start:
+            * grid-column-end: 
+        - Use z-index if you want to stack the elements. 
+    */
+        .container
+        {
+            display: grid;
+            grid-template-rows: 100px 100px 100px 100px 100px 100px; 
+            grid-template-columns:100px 100px 100px 100px 100px 100px;
+        }
+
+        .item-1
+        {
+            grid-row-start:1;
+            grid-column-start:1;
+
+            grid-row-end:3;
+            grid-column-end:3;
+        }
+
+        .item-2
+        {
+            grid-row-start:3;
+            grid-column-start:3;
+
+            grid-row-end:5;
+            grid-column-end:5;
+        }
+        
+        .item-3
+        {
+            grid-row-start:-1;
+            grid-column-start:-1;
+
+            grid-row-end:-3;
+            grid-column-end:-3;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="item item-1">
+            div1
+        </div>
+
+        <div class="item item-2">
+            div2
+        </div>
+
+        <div class="item item-3">
+            div3
+        </div>
+
+    </div>
+</body>
+</html>

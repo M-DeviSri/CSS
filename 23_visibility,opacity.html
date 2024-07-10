@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            visibility and Opacity Properties
+        </title>
+        <style>
+            div
+            {
+                position: relative;
+                left: 100px;
+                top: 100px;
+                background-color: cadetblue;
+                color: white;
+                width: 300px;
+                height: 300px;
+                padding: 100px;
+                font-size: 32px;
+                margin: 50px;
+                border: 10px solid blue;
+                box-shadow: 10px 15px 15px skyblue;
+                border-radius: 50px;
+                float: left;
+            }
+            div:nth-child(1)
+            {
+                visibility: visible;
+            }
+            div:nth-child(2)
+            {
+                display: block;
+            }
+            div:nth-child(3)
+            {
+                opacity: 0.5;
+            }
+            body
+            {
+                background-image: url(Images/1333846.png);
+                background-size: cover;
+                background-position: fixed;
+                background-repeat: no-repeat;
+            }
+        </style>
+    </head>
+    <body>
+        <center>
+            <div>Hi This is DIV 1</div>
+            <div>Hi This is DIV 2</div>
+            <div>Hi This is DIV 3</div>
+        </center>
+    </body>
+</html>
+
+<!--Document object model tree - DOM Tree -->

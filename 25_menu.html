@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            MENU CSS
+        </title>
+        <style>
+            body
+            {
+                height: 2000px;
+            }
+            div
+            {
+                width: 200px;
+                height: 100px;
+                padding: 50px;
+                border: solid 3px blue;
+                position: absolute;
+                color: black;
+                font-size: 22px;
+                font-weight: lighter;
+                text-align: center;
+                font-family: cursive;
+                text-decoration: none;
+            }
+            div:nth-child(1)
+            {
+                background-color: aqua;
+                z-index: 1;
+                width: 90%;
+                height: 10%;
+                position: fixed;
+                z-index: 999;
+            }
+            div:nth-child(2)
+            {
+                background-color: aquamarine;
+                top: 150px;
+                left: 200px;
+                z-index: 2;
+            }
+            div:nth-child(3)
+            {
+                background-color: cadetblue;
+                top: 300px;
+                left: 400px;
+                z-index: 3;
+            }
+            .logo
+            {
+                position: absolute;
+                left:30px;
+                top: 30px;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <a href="#" class="logo"><img src="Images/logo.png" width="50" height="50"/></a>
+            <a href="A_Home.html" target="_blank">Home</a> &nbsp;
+            <a href="A_Profile.html" target="_blank">Profile</a> &nbsp;
+            <a href="A_Logout.html" target="_blank">Logout</a> &nbsp;
+        </div>
+        <div>
+            This is DIV-2
+        </div>
+        <div>
+            This is DIV-3
+        </div>
+    </body>
+</html>
